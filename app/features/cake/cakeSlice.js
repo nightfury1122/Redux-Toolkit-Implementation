@@ -9,9 +9,9 @@ const initialState = {
 // This functions takes an object as an argument
 // CreateSlice handles the actions , actionCreators , Switch statements , etc under the hood, reducing the boilerplate.
 
-const cakeSlice = cakeSlice({
+const cakeSlice = createSlice({
     // The object takes three things 1) name , 2) intiialState , 3) reducer function
-    name: cake,
+    name: "cake",
     initialState,
     reducers: {
 
