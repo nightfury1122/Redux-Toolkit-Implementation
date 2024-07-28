@@ -7,6 +7,7 @@ console.log('Initial State', store.getState())
 // Subscribing to the store to get the latest state
 
 const unsubscribe = store.subscribe(() => {
+    console.log("updated State", store.getState())
 })
 
 // ************ Information about Logger middleware ***************
@@ -36,5 +37,5 @@ store.dispatch(IceCreamActions.ordered())
 store.dispatch(IceCreamActions.restocked(3))
 
 
-unsubscribe() 
+unsubscribe()
 

@@ -17,10 +17,10 @@ const store = configureStore({
     },
     // In rtk a middleware is passed after the reducer in the configureStore() method
     // The middleware accepts a function as its argument
-    middleware:(getDefaultMiddleware)=>
-        // The below step for logger is done because the ConfigureStore function has some middleware by default that it sets up Automatically
-        // So we just append the default middleware with the logger middleware.
-        getDefaultMiddleware().concat(logger)
+    // middleware:(getDefaultMiddleware)=>
+    // The below step for logger is done because the ConfigureStore function has some middleware by default that it sets up Automatically
+    // So we just append the default middleware with the logger middleware.
+    // getDefaultMiddleware().concat(logger)
 })
 
 module.exports = store
