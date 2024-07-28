@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.6"
+    "@reduxjs/toolkit": "^2.2.6",
+    "redux-logger": "^3.0.6"
   }
 }
