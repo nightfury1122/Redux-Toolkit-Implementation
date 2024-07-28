@@ -22,9 +22,12 @@ const icecreamSlice = createSlice({
 
     // Extra reducer takes accepts a function as an argument
     // This function takes a builder as an argument
+
     extraReducers: (builder) => {
+
         // The addCase accepts an action which in this case is cakeOrdered action and a function as an argument
         // In this case the function only needs state to mutate the state
+        
         builder.addCase(cakeActions.ordered, state => {
             state.numberOfIcecreams--
         })
